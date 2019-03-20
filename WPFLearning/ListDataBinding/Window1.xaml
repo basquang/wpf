@@ -1,0 +1,49 @@
+﻿<Window x:Class="ListDataBinding.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ListDataBinding"
+    Title="List Data Binding" Height="300" Width="300">
+    <Window.Resources>
+        <local:People x:Key="Microsoft">
+            <local:Person Name="Nguyen Ba Quang" Age="28"/>
+            <local:Person Name="Trinh Minh Cuong" Age="35"/>
+            <local:Person Name="Bill Gates" Age="63"/>
+        </local:People>
+    </Window.Resources>
+    <Grid Name="grid" DataContext="{StaticResource Microsoft}">
+        <!--<ListBox Name="lbPeople"
+                 ItemsSource="{Binding}"
+                 IsSynchronizedWithCurrentItem="True">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                        is
+                        <TextBlock Text="{Binding Path=Age}"/>
+                        age
+                    </TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <TextBlock>Name:</TextBlock>
+        <TextBlock Grid.Row="1">Age:</TextBlock>
+        <TextBox Grid.Column="1" Name="txtName" Text="{Binding Path=Name}"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="txtAge" Text="{Binding Path=Age}"></TextBox>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="3" >
+            <Button Name="btnBack" Click="btnBack_Click">Back</Button>
+            <Button Click="Button_Click">Display</Button>
+            <Button Name="btnNext" Click="btnNext_Click">Next</Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>

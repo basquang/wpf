@@ -1,0 +1,13 @@
+﻿<Window x:Class="UsingSettings.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:UsingSettings"
+    Title="Window1" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock
+                Text="{Binding Path=MyAppSetting, Source={x:Static local:Properties.Settings.Default}}"/>
+            <TextBlock Name="myUserSetting"/>
+        </StackPanel>
+    </Grid>
+</Window>

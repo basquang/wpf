@@ -1,0 +1,18 @@
+﻿<Window x:Class="Commands.CustomRoutedUICommand"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Commands"
+    Title="CustomRoutedUICommand" Height="300" Width="300">
+    <Window.CommandBindings>
+        <CommandBinding 
+            Command="local:MyCommands.InsertCustomer"
+            CanExecute="InsertCustomer_CanExecute"
+            Executed="InsertCustomer_Executed"/>           
+    </Window.CommandBindings>
+    <StackPanel>
+        <MenuItem
+            Command="local:MyCommands.InsertCustomer"
+            Header="Insert Customer"/>
+        <ListBox Name="lsbCustomers"/>
+    </StackPanel>
+</Window>

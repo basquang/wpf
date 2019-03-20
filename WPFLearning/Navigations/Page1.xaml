@@ -1,0 +1,13 @@
+﻿<Page x:Class="Navigations.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Page1">
+    <StackPanel>
+        <TextBlock>Page 01 Contents</TextBlock>
+        <TextBlock>            
+            <Hyperlink NavigateUri="Page2.xaml">
+            Navigate to Page 02
+        </Hyperlink>
+        </TextBlock>        
+    </StackPanel>
+</Page>

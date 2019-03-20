@@ -1,0 +1,25 @@
+﻿<Window x:Class="FixedDocuments.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="300" Width="300">
+    <ListView ItemsSource="{Binding}">
+        <ListView.View>
+            <GridView x:Name="gridReport">
+                <GridViewColumn Header="FirstName" DisplayMemberBinding="{Binding Path=FirstName}">
+                    <GridViewColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label/>
+                        </DataTemplate>
+                    </GridViewColumn.CellTemplate>
+                </GridViewColumn>
+                <GridViewColumn Header="LastName" DisplayMemberBinding="{Binding Path=LastName}">
+                    <GridViewColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label/>
+                        </DataTemplate>
+                    </GridViewColumn.CellTemplate>
+                </GridViewColumn>
+            </GridView>
+        </ListView.View>
+    </ListView>
+</Window>
