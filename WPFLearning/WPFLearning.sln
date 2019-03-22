@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFInWinForm", "WPFInWinFor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDataApp", "WpfDataApp\WpfDataApp.csproj", "{2F107BBC-1691-4770-83EB-E126486277C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvmApp", "WpfMvvmApp\WpfMvvmApp.csproj", "{0DBA193F-C10A-4E7A-ADCB-AEFE8488B97A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +157,10 @@ Global
 		{2F107BBC-1691-4770-83EB-E126486277C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F107BBC-1691-4770-83EB-E126486277C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F107BBC-1691-4770-83EB-E126486277C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBA193F-C10A-4E7A-ADCB-AEFE8488B97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBA193F-C10A-4E7A-ADCB-AEFE8488B97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBA193F-C10A-4E7A-ADCB-AEFE8488B97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBA193F-C10A-4E7A-ADCB-AEFE8488B97A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
