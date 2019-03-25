@@ -12,7 +12,7 @@ namespace DataValidation
         {
             if (value == null || value.ToString().Equals(string.Empty))
             {
-                return new ValidationResult(false, "Name is required!");
+                return new ValidationResult(false, "This field is required!");
             }
             return new ValidationResult(true, null);
         }
