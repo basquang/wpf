@@ -96,6 +96,7 @@
     <Compile Include="Model\Order_Detail.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\CustomerViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -127,6 +128,9 @@
       <DependentUpon>NorthwindModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\WpfEf6MvvmApp.Model.Customer.datasource" />
+    <None Include="Properties\DataSources\WpfEf6MvvmApp.Model.Order.datasource" />
+    <None Include="Properties\DataSources\WpfEf6MvvmApp.Model.Order_Detail.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

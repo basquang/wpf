@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfEf6MvvmApp.ViewModel;
 
 namespace WpfEf6MvvmApp.Views
 {
@@ -20,9 +21,18 @@ namespace WpfEf6MvvmApp.Views
     /// </summary>
     public partial class MainWindow : Window
     {
+        CustomerViewModel viewModel = new CustomerViewModel();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            System.Windows.Data.CollectionViewSource customerViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("customerViewSource")));
+            // Load data by setting the CollectionViewSource.Source property:
+            customerViewSource.Source = viewModel.Customers;
         }
     }
 }
