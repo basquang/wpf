@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,25 +13,27 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WithoutBinding
+namespace WpfControlsApp
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class MainWindow : Window
     {
-        Person person = new Person {Name="Nguyen Ba Quang", Age = 28 };
-        public Window1()
+        List<string> list = new List<string>
+        {
+            "Item1", "Item2"
+        };
+        public MainWindow()
         {
             InitializeComponent();
-            txtName.Text = person.Name;
-            txtAge.Text = person.Age.ToString();
+            
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ///person.Age = person.Age + 1;
-            MessageBox.Show("Your name is: " + txtName.Text);
+            MessageBox.Show("Your name is " + label1.Content + " " + label2.Content + " and email is " + label3.Content);
         }
     }
 }

@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfControlsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlsApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBox Name="txtFirstName"/>
+        <TextBox Name="txtLastName"/>
+        <TextBox Name="txtEmail"/>
+        <Label Name="label1" Content="{Binding Text, ElementName=txtFirstName}"/>
+        <Label Name="label2" Content="{Binding Text, ElementName=txtLastName}"/>
+        <Label Name="label3" Content="{Binding Text, ElementName=txtEmail}"/>
+        <Button Content="_Submit" Click="Button_Click"/>
+    </StackPanel>
+</Window>

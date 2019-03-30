@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="VietIS Home" Height="450" Width="800">
+    <DockPanel>
+        <ToolBar HorizontalAlignment="Left" DockPanel.Dock="Top" Width="276" Height="26" Name="toolbar1">
+            <Button Content="Bold"/>
+            <Button Content="Italic"/>
+            <Slider Name="slider1" Minimum="12" Maximum="100" Width="100"/>
+        </ToolBar>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox Grid.Column="0" Name="listbox1" SelectionChanged="Listbox1_SelectionChanged"/>
+            <GridSplitter Grid.Column="1"/>
+            <RichTextBox Grid.Column="2" Name="richtextbox1"/>
+        </Grid>
+    </DockPanel>
+</Window>
+
+    

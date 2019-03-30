@@ -4,13 +4,13 @@
     Title="Window1" Height="300" Width="300">
     <StackPanel>
         <StackPanel.Resources>
-            <BooleanToVisibilityConverter x:Key="boolToVis"/>
+            <BooleanToVisibilityConverter x:Key="boolToVisibility"/>
         </StackPanel.Resources>
         <CheckBox x:Name="chkShowDetails" Content="Show Details"/>
         <StackPanel x:Name="detailPanels"
-                    Visibility="{Binding IsChecked, ElementName=chkShowDetails,
-            Converter={StaticResource boolToVis}}">
+                    Visibility="{Binding IsChecked, ElementName=chkShowDetails, Converter={StaticResource boolToVisibility}}">
             <TextBlock>Detail Contents</TextBlock>
         </StackPanel>
+        <ListBox Name="listBox1"/>
     </StackPanel>
 </Window>
