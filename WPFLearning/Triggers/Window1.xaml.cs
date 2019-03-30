@@ -23,5 +23,17 @@ namespace Triggers
         {
             InitializeComponent();
         }
+
+        private void Property_Click(object sender, RoutedEventArgs e)
+        {
+            Window propertyWindow = new PropertyTriggers();
+            propertyWindow.Show();
+        }
+
+        private void Data_Click(object sender, RoutedEventArgs e)
+        {
+            Window dataWindow = new DataTriggers();
+            dataWindow.Show();
+        }
     }
 }

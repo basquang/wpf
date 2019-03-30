@@ -25,13 +25,13 @@ namespace UsingSettings.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string MyUserSetting {
+        [global::System.Configuration.DefaultSettingValueAttribute("basquang")]
+        public string MyUser {
             get {
-                return ((string)(this["MyUserSetting"]));
+                return ((string)(this["MyUser"]));
             }
             set {
-                this["MyUserSetting"] = value;
+                this["MyUser"] = value;
             }
         }
         
@@ -41,6 +41,18 @@ namespace UsingSettings.Properties {
         public bool MyAppSetting {
             get {
                 return ((bool)(this["MyAppSetting"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool IsDarkMode {
+            get {
+                return ((bool)(this["IsDarkMode"]));
+            }
+            set {
+                this["IsDarkMode"] = value;
             }
         }
     }

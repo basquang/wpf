@@ -5,9 +5,10 @@
     Title="Window1" Height="300" Width="300">
     <Grid>
         <StackPanel>
-            <TextBlock
+            <TextBlock  
                 Text="{Binding Path=MyAppSetting, Source={x:Static local:Properties.Settings.Default}}"/>
-            <TextBlock Name="myUserSetting"/>
+            <TextBox Text="{Binding Source={x:Static local:Properties.Settings.Default}, Path=MyUser}"/>
+            <CheckBox IsChecked="{Binding Source={x:Static local:Properties.Settings.Default}, Path=IsDarkMode}"/>
         </StackPanel>
     </Grid>
 </Window>

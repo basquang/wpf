@@ -3,9 +3,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="Window1" Height="300" Width="300">
     <Window.Resources>
-        <Style TargetType="{x:Type Button}">
+        <Style TargetType="{x:Type Button}" x:Key="animationButtonStyle">
             <Setter Property="Width" Value="200"/>
-            <Setter Property="Height" Value="200"/>
+            <Setter Property="Height" Value="20"/>
             <Setter Property="Margin" Value="20"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Style.Triggers>
@@ -38,7 +38,8 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Grid>
+    <StackPanel>
         <Button x:Name="myButton" Content="Hello Vietnam"/>
-    </Grid>
+        <Button Name="button2" Content="Button2" Style="{StaticResource animationButtonStyle}"/>
+    </StackPanel>
 </Window>

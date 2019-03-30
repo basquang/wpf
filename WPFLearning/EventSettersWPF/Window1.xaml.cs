@@ -21,7 +21,7 @@ namespace EventSettersWPF
     {
         public Window1()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
         void ButtonClick(object sender, RoutedEventArgs args)
         {

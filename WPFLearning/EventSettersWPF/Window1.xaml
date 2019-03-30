@@ -4,12 +4,14 @@
     Title="Window1" Height="300" Width="300">
     <Window.Resources>
         <Style TargetType="{x:Type Button}">
-            <EventSetter Event="Click" Handler="ButtonClick"/>
+            <EventSetter Event="Click"  Handler="ButtonClick"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="30"/>
         </Style>
     </Window.Resources>
     <StackPanel>
         <TextBlock Name="tblButtonName"/>
-        <Button Width="200" Name="btnSubmit">Submit</Button>
-        <Button Width="200" Name="btnCancel">Cancel</Button>
+        <Button Name="btnSubmit">Submit</Button>
+        <Button Name="btnCancel">Cancel</Button>
     </StackPanel>
 </Window>

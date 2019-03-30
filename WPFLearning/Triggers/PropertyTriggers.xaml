@@ -4,7 +4,7 @@
     Title="PropertyTriggers" Height="300" Width="300">
     <Window.Resources>
         <Style TargetType="{x:Type Button}">
-            <Setter Property="Button.Background" Value="AliceBlue"/>
+            <Setter Property="Button.Background" Value="Blue"/>
             <Setter Property="Button.Opacity" Value="0.5"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="true">

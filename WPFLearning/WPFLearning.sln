@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfListBindingApp", "WpfLis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDataValidationApp", "WpfDataValidationApp\WpfDataValidationApp.csproj", "{6CDA4DAD-6A55-4AA7-A00A-285FDAF27E6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCommandApp", "WpfCommandApp\WpfCommandApp.csproj", "{CC5028AE-6EDA-475F-8AA6-AF5478972889}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,6 +211,10 @@ Global
 		{6CDA4DAD-6A55-4AA7-A00A-285FDAF27E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CDA4DAD-6A55-4AA7-A00A-285FDAF27E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CDA4DAD-6A55-4AA7-A00A-285FDAF27E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC5028AE-6EDA-475F-8AA6-AF5478972889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC5028AE-6EDA-475F-8AA6-AF5478972889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC5028AE-6EDA-475F-8AA6-AF5478972889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC5028AE-6EDA-475F-8AA6-AF5478972889}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -242,6 +248,7 @@ Global
 		{5C7E0B22-EBBC-47DB-A3B5-C1D8C488EA80} = {B8C17B89-17A7-420A-A6FA-F807558F3963}
 		{E42D128B-8927-4783-99D8-9237393467D5} = {B8C17B89-17A7-420A-A6FA-F807558F3963}
 		{6CDA4DAD-6A55-4AA7-A00A-285FDAF27E6F} = {B8C17B89-17A7-420A-A6FA-F807558F3963}
+		{CC5028AE-6EDA-475F-8AA6-AF5478972889} = {EA0E1CA1-B7CD-4DC7-977C-7FD225D405C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {62E14B0B-4F98-4A01-89EB-74B1C0AFFC52}

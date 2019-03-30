@@ -19,20 +19,12 @@ namespace UsingSettings
     /// </summary>
     public partial class Window1 : Window
     {
-        string[] mySettings = { 
-                            "Settings 1",
-                            "Setting 2",
-                            "Setting 3",
-                            "Setting 4",
-                            "Setting 5"
-                            };
-        Random rnd = new Random();
         public Window1()
         {
             InitializeComponent();
-            myUserSetting.Text = Properties.Settings.Default.MyUserSetting;
+            //myUserSetting.Text = Properties.Settings.Default.MyUser;
             //Save new User setting
-            Properties.Settings.Default.MyUserSetting = mySettings[rnd.Next(mySettings.Length - 1)];
+            //Properties.Settings.Default.MyUser = mySettings[rnd.Next(mySettings.Length - 1)];
         }
         protected override void OnClosed(EventArgs e)
         {
